@@ -1,1 +1,41 @@
-﻿
+﻿@{
+    ViewData["Title"] = "Contactos";
+}
+
+<h2>Contactos</h2>
+
+<p>Nome: Ana Raquel Ferreira Vending</p>
+<p>Contactos:</p>
+<ul>
+    <li>Telemóvel: 9** *** ***</li>
+    <li>Fixo: 239 *** ***</li>
+</ul>
+<p>Morada: R. Manuel de Almeida e Sousa</p>
+<p>Código Postal: 3020-258 Coimbra</p>
+
+<div id="map">
+    <iframe width="100%"
+            height="600"
+            frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3117.075163801131!2d-8.419564284657458!3d40.21273187938672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd23061c52f892cb%3A0x7db2d5a0781042f!2sR.%20Manuel%20de%20Almeida%20e%20Sousa%2C%203020-258%20Coimbra!5e0!3m2!1sen!2spt!4v1663255580856!5m2!1sen!2spt" allowfullscreen>
+    </iframe>
+</div>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<h2>Formulário de Contacto</h2>
+<form action="/Home/Contacts" method="post" name="Formulário">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Mensagem:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <input type="submit" value="Enviar">
+</form>
+
+<

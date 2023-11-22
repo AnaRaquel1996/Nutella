@@ -72,6 +72,18 @@ namespace Nutella.Web.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public IActionResult Contact(string name, string email, string message)
+        {
+            // Aqui você pode adicionar lógica para processar o formulário e enviar o email.
+
+            // Exemplo simples de exibição das informações enviadas.
+            ViewData["Name"] = name;
+            ViewData["Email"] = email;
+            ViewData["Message"] = message;
+
+            return View("ContactConfirmation");
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
